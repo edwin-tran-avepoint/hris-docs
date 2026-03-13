@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install mkdocs mkdocs-material
+      - run: cp docs/Requisition-configuration-NoPic.md docs/index.md
       - run: mkdocs build --site-dir site
       - uses: actions/upload-pages-artifact@v3
         with:
